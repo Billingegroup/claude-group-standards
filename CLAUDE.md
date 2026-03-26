@@ -71,6 +71,9 @@ All parameter descriptions in NumPy docstrings must begin with **"The"**.
 ### argparse help strings
 Write argparse `help=` and `description=` strings to be as informative as possible. Include examples where helpful. Do **not** force them to start with "The" — some inputs are actions where that makes no sense.
 
+### Exception message
+All exception messages must include concise information about 'what is wrong' and 'how to fix it' when they are raised.
+
 ### File paths
 Always use `pathlib.Path` for file and directory paths. Avoid `os.path`, string concatenation, or `open()` with raw strings.
 
